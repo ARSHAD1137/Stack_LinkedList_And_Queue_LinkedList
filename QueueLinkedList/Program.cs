@@ -12,6 +12,8 @@ namespace QueueLinkedList
             linkedListQueue.Enqueue(30);
             linkedListQueue.Enqueue(70);
             linkedListQueue.Display();
+            linkedListQueue.Dequeue();
+            Console.ReadKey();
         }
     }
 }

@@ -43,5 +43,16 @@ namespace QueueLinkedList
                 temp = temp.next;
             }
         }
+        internal Node Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Queue is Empty");
+                return null;
+            }
+            Node temp = this.head;
+            this.head = this.head.next;
+            return this.head;
+        }
     }
 }
